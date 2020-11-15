@@ -37,7 +37,7 @@ def launchSynFloodAttack():
 	
 def pingDuringAttack():
 	global output2
-	command = "ping -c 25" + victim
+	command = "ping -c 25 " + victim
 	output2 = subprocess.check_output(command, shell=True)
 
 try :
@@ -88,3 +88,5 @@ try :
 
 except :
 	pass
+	
+input("This was just to stop program from auto Quitting")
